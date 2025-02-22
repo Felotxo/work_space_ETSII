@@ -32,7 +32,9 @@ var sumando1 = 35;
 var sumando2 = 45;
 var resultadoSuma = sumando1 + sumando2;
 console.log("El resultado de sumar " + sumando1 + " + " + sumando2 + " es " + resultadoSuma);
-
-
-
-
+var texto="Esto es el texto";
+var busqueda= texto.indexOf("texto");doument.write(busqueda);
+var busqueda= texto.match(/texto/gi) // con esto nos devuelve todos los resultados que tengamos de lo que buscas
+var numero78 = 9;
+numero78++;
+alert(numero78);
