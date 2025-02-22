@@ -8,3 +8,4 @@ var confirmacion = confirm ("estas en una zona excluidad de mamones, eres un mam
 en varias lineas*/
 console.log("Esto es un mensaje escrito por consola");
 
+
