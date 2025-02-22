@@ -32,3 +32,7 @@ var sumando1 = 35;
 var sumando2 = 45;
 var resultadoSuma = sumando1 + sumando2;
 console.log("El resultado de sumar " + sumando1 + " + " + sumando2 + " es " + resultadoSuma);
+
+
+
+
