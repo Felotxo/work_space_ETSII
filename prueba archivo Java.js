@@ -24,3 +24,11 @@ for (i=0 ; i<10 ; i++){
     document.write("<br>");
     }
     document.write("Ejecución terminada.");
+var contador = 0;
+var meses = ["Enero", "Febrero",
+"Marzo", "Abril", "Mayo", "Junio",
+"Julio", "Agosto", "Septiembre",
+"Octubre", "Novienbre", "Diciembre"];while (contador < meses.length) 
+{document.write(meses[contador] +
+"<br>");contador++;
+}

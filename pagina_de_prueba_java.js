@@ -16,3 +16,7 @@ alert("Te puedes comprar elcoche");
 }else{
 alert("Te vas en autobus");
 }
+var array1=["objeto1","objeto2","objeto3"];
+array1[3]="objeto4";
+array1[4]=prompt("Introduce objeto4");
+alert(array1[4]);
