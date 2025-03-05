@@ -1,11 +1,24 @@
-n_nota = float(input("introduzca nota:"))
+for i in "fra":
+    print("Hola", end=" ")
 
-if n_nota>5:
-    calificacion="aprobado"
+miEmail=input("Introduce email")
+email=False
+for i in miEmail:
+    if i == "@":
+        email = True
+if email:
+    print("El email es correcto")
 else:
-    calificacion="suspenso"
-print(calificacion)
+    print("EL mail no es correcto")
 
 
 
+for i in range(5,10,1):
+    print(f"Valor de la variable {i}")
 
+
+for i in range(5,10):
+    print(f"Valor de la variable {i}")
+
+for x in "banana":
+    print(x)
