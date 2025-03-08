@@ -6,3 +6,9 @@ elif x == y:
         print("a y b son iguales")
 else:
         print("el numero menor es: ", y)
+
+
+from random import shuffle
+x = ["skyrim", "pertenece", "a", "los", "nordicos"]
+shuffle(x)
+print(x)
