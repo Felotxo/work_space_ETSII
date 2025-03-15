@@ -9,13 +9,14 @@ class Libro():
         self.autor = autor
         self.isbn = isbn
         self.disponible = disponible
+# definimos el metodo str para que nos muestre los atributos del libro
     def __str__(self):
         return f"Titulo: {self.titulo}, Autor: {self.autor}, ISBN: {self.isbn}, Disponible: {self.disponible}" 
 
     # defino la lista biblioteca
 biblioteca = []
 
-# desarrollo los metodos que tendra la clase
+# desarrollo los metodos para agregar, prestar, devolver, mostrar, buscar y salir del sistema
 
 def agregar():     
         titulo = input("Que titulo tiene el libro: ")
