@@ -18,14 +18,14 @@ biblioteca = []
 # desarrollo los metodos para agregar, prestar, devolver, mostrar, buscar y salir del sistema
 
 def agregar():     
-    titulo = input("Que titulo tiene el libro: ")
-    autor = input("Quien es el autor: ")
-    isbn = input("Cual es el ISBN: ")
+        titulo = input("Que titulo tiene el libro: ")
+        autor = input("Quien es el autor: ")
+        isbn = input("Cual es el ISBN: ")
     
     # Creamos una instancia de Libro y la agregamos a la lista
-    libro = Libro(titulo, autor, isbn)
-    biblioteca.append(libro)
-    print("¡Libro agregado correctamente!")
+        libro = Libro(titulo, autor, isbn)
+        biblioteca.append(libro)
+        print("¡Libro agregado correctamente!")
 
 
 def prestar():
@@ -89,24 +89,24 @@ def main():
         print("6. Salir del Sistema")
 
 
-        opcion = int(input("Elija una opcion por favor: "))
+        opcion = input("Elija una opcion por favor: ")
   
-        if opcion == 1:
+        if opcion == '1':
             agregar()
                          
-        elif opcion == 2:
+        elif opcion == '2':
             prestar()
         
-        elif opcion == 3:
+        elif opcion == '3':
             devolver()
                 
-        elif opcion == 4:
+        elif opcion == '4':
             mostrar()
 
-        elif opcion == 5:
+        elif opcion == '5':
             buscar()
 
-        elif opcion == 6:
+        elif opcion == '6':
             salir()
 
         else:
