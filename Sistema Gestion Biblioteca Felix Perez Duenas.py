@@ -11,22 +11,21 @@ class Libro():
         self.disponible = disponible
 # definimos el metodo str para que nos muestre los atributos del libro
     def __str__(self):
-        return f"Titulo: {self.titulo}, Autor: {self.autor}, ISBN: {self.isbn}, Disponible: {self.disponible}" 
-
-    # defino la lista biblioteca
+        return f"Titulo: {self.titulo}, Autor: {self.autor}, ISBN: {self.isbn}, Disponible: {"si" if self.disponible else "No"}" 
+    # defino la lista biblioteca para almacenar los libros
 biblioteca = []
 
 # desarrollo los metodos para agregar, prestar, devolver, mostrar, buscar y salir del sistema
 
 def agregar():     
-        titulo = input("Que titulo tiene el libro: ")
-        autor = input("Quien es el autor: ")
-        isbn = input("Cual es el ISBN: ")
+    titulo = input("Que titulo tiene el libro: ")
+    autor = input("Quien es el autor: ")
+    isbn = input("Cual es el ISBN: ")
     
     # Creamos una instancia de Libro y la agregamos a la lista
-        libro = Libro(titulo, autor, isbn)
-        biblioteca.append(libro)
-        print("¡Libro agregado correctamente!")
+    libro = Libro(titulo, autor, isbn)
+    biblioteca.append(libro)
+    print("¡Libro agregado correctamente!")
 
 
 def prestar():
@@ -35,12 +34,12 @@ def prestar():
     for libro in biblioteca:
         if libro.isbn == isbn:
             if not libro.disponible:
-                    print("El libro no está disponible.")
+                print("El libro no está disponible.")
             else:
                 libro.disponible = False
                 print(f"Libro '{libro.titulo}' prestado correctamente.")
             return
-        print("libro no encontrado")
+    print("libro no encontrado")
         
 def devolver():
     isbn = input("Escriba el ISBN del libro a devolver: ")
@@ -53,7 +52,7 @@ def devolver():
             else:
                 print("El libro ya estaba disponible.")
             return
-        print("Libro no encontrado.")
+    print("Libro no encontrado.")
     
 def mostrar():
     if not biblioteca:
@@ -88,9 +87,10 @@ def main():
         print("4. Mostrar Libros")
         print("5. Buscar")
         print("6. Salir del Sistema")
-    
-        opcion = int(input("Elija una opcion por favor: "))
 
+
+        opcion = int(input("Elija una opcion por favor: "))
+  
         if opcion == 1:
             agregar()
                          
